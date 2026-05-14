@@ -44,9 +44,10 @@ export default function PayslipSearch() {
             bg-transparent
             outline-none
             w-full
-            text-[15px]
+            text-base
             text-white
             placeholder:text-gray-500
+            leading-normal
           "
         />
 
@@ -68,7 +69,7 @@ export default function PayslipSearch() {
 
         <Calendar size={20} />
 
-        <span className="text-[15px] font-medium">
+        <span className="text-base font-semibold leading-snug">
           April 2026
         </span>
 
@@ -90,7 +91,7 @@ export default function PayslipSearch() {
 
         <SlidersHorizontal size={20} />
 
-        <span className="text-[15px] font-medium">
+        <span className="text-base font-semibold leading-snug">
           Filters
         </span>
 
@@ -101,7 +102,7 @@ export default function PayslipSearch() {
         className="
           px-7 py-3.5
           rounded-2xl
-          text-[15px] font-semibold
+          text-base font-semibold leading-snug
           bg-gradient-to-r
           from-cyan-500
           to-blue-500

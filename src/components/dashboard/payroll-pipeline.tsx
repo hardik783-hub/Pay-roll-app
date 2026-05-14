@@ -39,7 +39,7 @@ export default function PayrollPipeline() {
           Payroll Processing Pipeline
         </h2>
 
-        <p className="text-base text-gray-400 mt-2 leading-relaxed">
+        <p className="text-base text-gray-300 mt-2 leading-relaxed">
           Realtime distributed payroll orchestration
         </p>
 
@@ -81,7 +81,7 @@ export default function PayrollPipeline() {
                 bg-gradient-to-br
                 from-cyan-500/10
                 to-purple-500/10
-                text-[18px] lg:text-[19px] font-medium
+                text-lg lg:text-xl font-semibold
                 whitespace-nowrap
                 shadow-[0_0_25px_rgba(34,211,238,0.06)]
                 backdrop-blur-xl

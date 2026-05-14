@@ -47,7 +47,7 @@ export default function ActivityFeed() {
           Live Activity
         </h2>
 
-        <p className="text-base text-gray-400 mt-1.5 leading-relaxed">
+        <p className="text-base text-gray-300 mt-1.5 leading-relaxed">
           Realtime payroll infrastructure events
         </p>
       </div>
@@ -82,13 +82,13 @@ export default function ActivityFeed() {
                 {activity.icon}
               </div>
 
-              <p className="text-[15px] leading-snug text-gray-100 min-w-0">
+              <p className="text-base leading-relaxed text-gray-100 min-w-0 font-medium">
                 {activity.text}
               </p>
 
             </div>
 
-            <span className="shrink-0 text-sm text-gray-400 tabular-nums">
+            <span className="shrink-0 text-base text-gray-300 tabular-nums font-medium">
               {activity.time}
             </span>
 

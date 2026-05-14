@@ -93,8 +93,8 @@ export default function DashboardShell({
 
             <p
               className="
-                text-[15px]
-                text-gray-400
+                text-base
+                text-gray-300
                 mt-2.5
                 leading-relaxed
               "
@@ -166,17 +166,19 @@ export default function DashboardShell({
 
             <p
               className="
-                text-xs
+                text-sm
+                font-medium
                 uppercase
-                tracking-[0.22em]
+                tracking-[0.18em]
                 text-cyan-300/80
                 mb-3
+                leading-normal
               "
             >
               System Status
             </p>
 
-            <h3 className="text-2xl font-semibold leading-snug">
+            <h3 className="text-2xl font-semibold leading-snug tracking-tight">
               All Systems Operational
             </h3>
 
@@ -191,7 +193,7 @@ export default function DashboardShell({
                 "
               />
 
-              <span className="text-[15px] text-gray-300">
+              <span className="text-base font-medium text-gray-200 leading-snug tabular-nums">
                 99.98% uptime
               </span>
 
@@ -271,8 +273,9 @@ function SidebarItem({
           className="
             relative z-10
             text-base
-            font-medium
-            text-gray-200
+            font-semibold
+            text-gray-100
+            leading-snug
           "
         >
           {label}

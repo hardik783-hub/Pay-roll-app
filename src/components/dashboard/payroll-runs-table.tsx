@@ -50,16 +50,16 @@ export default function PayrollRunsTable() {
           Payroll Runs
         </h2>
 
-        <p className="text-base text-gray-400 mt-1.5 leading-relaxed">
+        <p className="text-base text-gray-300 mt-1.5 leading-relaxed">
           Recent payroll execution activity
         </p>
       </div>
 
       <div className="overflow-x-auto">
 
-        <table className="w-full text-[15px] leading-snug">
+        <table className="w-full text-base leading-relaxed">
 
-          <thead className="text-gray-400 border-b border-white/10 text-sm font-medium">
+          <thead className="text-gray-300 border-b border-white/10 text-base font-semibold">
             <tr>
               <th className="text-left py-4 px-1 font-medium">Run ID</th>
               <th className="text-left py-4 px-1 font-medium">Employees</th>
@@ -81,7 +81,7 @@ export default function PayrollRunsTable() {
                 className="border-b border-white/5 hover:bg-white/5 transition"
               >
 
-                <td className="py-5 font-medium text-gray-100">
+                <td className="py-5 font-semibold text-gray-100">
                   {run.id}
                 </td>
 
@@ -97,7 +97,7 @@ export default function PayrollRunsTable() {
 
                   <span
                     className={`
-                      inline-flex items-center px-3.5 py-1.5 rounded-full text-sm font-medium
+                      inline-flex items-center px-3.5 py-2 rounded-full text-base font-medium
                       ${
                         run.status === "Completed"
                           ? "bg-emerald-500/10 text-emerald-300"
@@ -112,7 +112,7 @@ export default function PayrollRunsTable() {
 
                 </td>
 
-                <td className="py-5 text-gray-400">
+                <td className="py-5 text-gray-300 tabular-nums">
                   {run.time}
                 </td>
 

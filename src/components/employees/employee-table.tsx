@@ -69,14 +69,14 @@ export default function EmployeeTable() {
 
       <div className="overflow-x-auto">
 
-        <table className="w-full min-w-[920px] text-[15px] leading-snug">
+        <table className="w-full min-w-[920px] text-base leading-relaxed">
 
           <thead
             className="
               border-b border-white/10
-              text-gray-400
-              text-sm
-              font-medium
+              text-gray-300
+              text-base
+              font-semibold
             "
           >
 
@@ -133,7 +133,7 @@ export default function EmployeeTable() {
                         to-purple-500/20
                         border border-cyan-400/20
                         flex items-center justify-center
-                        text-[15px] font-semibold
+                        text-base font-semibold
                       "
                     >
                       {employee.initials}
@@ -141,11 +141,11 @@ export default function EmployeeTable() {
 
                     <div>
 
-                      <p className="font-medium text-gray-100 text-[16px]">
+                      <p className="font-semibold text-gray-100 text-lg leading-snug">
                         {employee.name}
                       </p>
 
-                      <p className="text-[15px] text-gray-400 mt-0.5">
+                      <p className="text-base text-gray-300 mt-1 leading-relaxed">
                         {employee.role}
                       </p>
 
@@ -161,9 +161,10 @@ export default function EmployeeTable() {
                   <span
                     className="
                       inline-flex items-center
-                      px-3.5 py-1.5
+                      px-3.5 py-2
                       rounded-full
-                      text-sm
+                      text-base
+                      font-medium
                       border border-white/10
                       bg-white/[0.03]
                     "
@@ -174,7 +175,7 @@ export default function EmployeeTable() {
                 </td>
 
                 {/* Salary */}
-                <td className="px-6 lg:px-7 py-6 text-cyan-300 font-semibold text-[16px]">
+                <td className="px-6 lg:px-7 py-6 text-cyan-300 font-semibold text-lg tabular-nums">
                   {employee.salary}
                 </td>
 
@@ -184,9 +185,9 @@ export default function EmployeeTable() {
                   <span
                     className={`
                       inline-flex items-center
-                      px-3.5 py-1.5
+                      px-3.5 py-2
                       rounded-full
-                      text-sm font-medium
+                      text-base font-semibold
                       ${statusStyles[
                         employee.status as keyof typeof statusStyles
                       ]}
@@ -204,7 +205,7 @@ export default function EmployeeTable() {
                     className="
                       px-5 py-2.5
                       rounded-xl
-                      text-[15px] font-medium
+                      text-base font-semibold
                       border border-cyan-400/20
                       bg-cyan-500/10
                       text-cyan-300

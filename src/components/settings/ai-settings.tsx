@@ -45,13 +45,13 @@ export default function AISettings() {
               "
             />
 
-            <h2 className="text-2xl font-semibold">
+            <h2 className="text-2xl lg:text-3xl font-semibold tracking-tight">
               AI Configuration
             </h2>
 
           </div>
 
-          <p className="text-base text-gray-400 mt-2">
+          <p className="text-base text-gray-300 mt-2 leading-relaxed">
             Intelligent payroll automation and monitoring systems.
           </p>
 
@@ -72,7 +72,7 @@ export default function AISettings() {
               "
             >
 
-              <span className="text-base text-gray-300">
+              <span className="text-base font-medium text-gray-100 leading-snug">
                 {config}
               </span>
 

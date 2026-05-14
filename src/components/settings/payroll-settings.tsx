@@ -34,11 +34,11 @@ export default function PayrollSettings() {
 
       <div className="mb-8">
 
-        <h2 className="text-2xl font-semibold">
+        <h2 className="text-2xl lg:text-3xl font-semibold tracking-tight">
           Payroll Configuration
         </h2>
 
-        <p className="text-base text-gray-400 mt-2">
+        <p className="text-base text-gray-300 mt-2 leading-relaxed">
           Configure payroll processing preferences.
         </p>
 
@@ -59,7 +59,7 @@ export default function PayrollSettings() {
             "
           >
 
-            <span className="text-base text-gray-300">
+            <span className="text-base font-medium text-gray-100 leading-snug">
               {setting.label}
             </span>
 
@@ -70,7 +70,7 @@ export default function PayrollSettings() {
                 bg-cyan-500/10
                 border border-cyan-400/20
                 text-cyan-300
-                text-sm
+                text-base font-semibold
               "
             >
               {setting.value}

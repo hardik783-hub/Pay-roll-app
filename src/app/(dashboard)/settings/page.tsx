@@ -29,7 +29,7 @@ export default function SettingsPage() {
           Settings
         </h1>
 
-        <p className="text-base text-gray-400 mt-2 max-w-3xl">
+        <p className="text-base text-gray-300 mt-2 max-w-3xl leading-relaxed">
           Configure payroll infrastructure, AI systems,
           notifications, and organizational preferences.
         </p>

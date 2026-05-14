@@ -34,11 +34,11 @@ export default function SecuritySettings() {
 
       <div className="mb-8">
 
-        <h2 className="text-2xl font-semibold">
+        <h2 className="text-2xl lg:text-3xl font-semibold tracking-tight">
           Security
         </h2>
 
-        <p className="text-base text-gray-400 mt-2">
+        <p className="text-base text-gray-300 mt-2 leading-relaxed">
           Infrastructure access and protection settings.
         </p>
 
@@ -59,7 +59,7 @@ export default function SecuritySettings() {
             "
           >
 
-            <span className="text-base text-gray-300">
+            <span className="text-base font-medium text-gray-100 leading-snug">
               {item.label}
             </span>
 
@@ -70,7 +70,7 @@ export default function SecuritySettings() {
                 border border-emerald-400/20
                 bg-emerald-500/10
                 text-emerald-300
-                text-sm
+                text-base font-semibold
               "
             >
               {item.status}

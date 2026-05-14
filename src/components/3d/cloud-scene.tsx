@@ -86,7 +86,9 @@ function Node({
               border border-cyan-400/20
               bg-black/70
               backdrop-blur-xl
-              text-[12px]
+              text-sm
+              font-medium
+              leading-normal
               text-cyan-200
               whitespace-nowrap
               shadow-[0_0_20px_rgba(34,211,238,0.15)]
@@ -149,7 +151,7 @@ export default function CloudScene() {
           AI Infrastructure Mesh
         </h2>
 
-        <p className="text-base text-gray-400 mt-2 max-w-md leading-relaxed">
+        <p className="text-base text-gray-300 mt-2 max-w-md leading-relaxed">
           Distributed realtime payroll compute topology
         </p>
 

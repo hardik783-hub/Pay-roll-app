@@ -29,7 +29,7 @@ export default function AnalyticsPage() {
           Analytics
         </h1>
 
-        <p className="text-base text-gray-400 mt-2 max-w-3xl leading-relaxed">
+        <p className="text-base text-gray-300 mt-2 max-w-3xl leading-relaxed">
           Monitor payroll intelligence and infrastructure performance.
         </p>
 

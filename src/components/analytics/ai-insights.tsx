@@ -63,7 +63,7 @@ export default function AIInsights() {
               "
             >
 
-              <p className="text-[15px] text-gray-200 leading-relaxed">
+              <p className="text-base leading-relaxed text-gray-100 font-medium">
                 {insight}
               </p>
 

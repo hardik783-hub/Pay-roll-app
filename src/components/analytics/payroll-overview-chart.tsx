@@ -49,7 +49,7 @@ export default function PayrollOverviewChart() {
           Payroll Overview
         </h2>
 
-        <p className="text-base text-gray-400 mt-2 leading-relaxed">
+        <p className="text-base text-gray-300 mt-2 leading-relaxed">
           Monthly payroll processing trends
         </p>
 
@@ -62,7 +62,7 @@ export default function PayrollOverviewChart() {
               <XAxis
                 dataKey="month"
                 stroke="#6b7280"
-                tick={{ fill: "#9ca3af", fontSize: 14 }}
+                tick={{ fill: "#a3a3a3", fontSize: 15, fontWeight: 500 }}
                 tickLine={false}
                 axisLine={{ stroke: "rgba(255,255,255,0.08)" }}
               />
@@ -72,10 +72,11 @@ export default function PayrollOverviewChart() {
                   backgroundColor: "rgba(9, 9, 11, 0.92)",
                   border: "1px solid rgba(255,255,255,0.12)",
                   borderRadius: "12px",
-                  fontSize: "14px",
-                  padding: "10px 14px",
+                  fontSize: "15px",
+                  padding: "12px 16px",
                 }}
-                labelStyle={{ color: "#e5e7eb", fontWeight: 600 }}
+                labelStyle={{ color: "#e5e7eb", fontWeight: 600, fontSize: "15px" }}
+                itemStyle={{ color: "#d1d5db", fontSize: "15px", fontWeight: 500 }}
               />
 
               <Line

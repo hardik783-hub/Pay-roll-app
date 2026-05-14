@@ -82,11 +82,11 @@ export default function PayslipStats() {
 
               <div>
 
-                <p className="text-base text-gray-400 mb-2.5">
+                <p className="text-base font-medium text-gray-300 mb-2.5 leading-snug">
                   {stat.title}
                 </p>
 
-                <h3 className="text-3xl lg:text-4xl 2xl:text-5xl font-semibold tracking-tight">
+                <h3 className="text-3xl lg:text-4xl 2xl:text-5xl font-semibold tracking-tight tabular-nums">
                   {stat.value}
                 </h3>
 

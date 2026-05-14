@@ -15,11 +15,11 @@ export default function ProfileSettings() {
 
       <div className="mb-8">
 
-        <h2 className="text-2xl font-semibold">
+        <h2 className="text-2xl lg:text-3xl font-semibold tracking-tight">
           Profile Settings
         </h2>
 
-        <p className="text-base text-gray-400 mt-2">
+        <p className="text-base text-gray-300 mt-2 leading-relaxed">
           Manage organization profile and payroll identity.
         </p>
 
@@ -64,7 +64,7 @@ function InputField({
 
     <div>
 
-      <label className="text-sm text-gray-400 mb-2 block">
+      <label className="text-base font-medium text-gray-300 mb-2.5 block leading-snug">
         {label}
       </label>
 
@@ -77,7 +77,7 @@ function InputField({
           bg-black/30
           border border-white/10
           outline-none
-          text-white
+          text-base text-white leading-normal
           focus:border-cyan-400/30
           transition-all
         "

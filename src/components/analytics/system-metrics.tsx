@@ -38,7 +38,7 @@ export default function SystemMetrics() {
         System Metrics
       </h2>
 
-      <p className="text-base text-gray-400 mt-2 leading-relaxed">
+      <p className="text-base text-gray-300 mt-2 leading-relaxed">
         Realtime infrastructure health
       </p>
 
@@ -57,11 +57,11 @@ export default function SystemMetrics() {
             "
           >
 
-            <p className="text-[15px] text-gray-400 leading-snug">
+            <p className="text-base font-medium text-gray-300 leading-snug">
               {metric.label}
             </p>
 
-            <h3 className="text-2xl lg:text-3xl font-semibold mt-2.5 text-cyan-300 tabular-nums">
+            <h3 className="text-2xl lg:text-3xl font-semibold mt-2.5 text-cyan-300 tabular-nums tracking-tight">
               {metric.value}
             </h3>
 

@@ -71,7 +71,7 @@ export default function DashboardPage() {
           Dashboard
         </h1>
 
-        <p className="text-base text-gray-400 mt-2 max-w-3xl leading-relaxed">
+        <p className="text-base text-gray-300 mt-2 max-w-3xl leading-relaxed">
           Monitor payroll processing and system health.
         </p>
 
@@ -200,11 +200,11 @@ function AnalyticsCard({
 
         <div>
 
-          <p className="text-base text-gray-400 mb-2.5">
+          <p className="text-base font-medium text-gray-300 mb-2.5 leading-snug">
             {title}
           </p>
 
-          <h3 className="text-3xl lg:text-4xl 2xl:text-5xl font-semibold tracking-tight">
+          <h3 className="text-3xl lg:text-4xl 2xl:text-5xl font-semibold tracking-tight tabular-nums">
             {value}
           </h3>
 

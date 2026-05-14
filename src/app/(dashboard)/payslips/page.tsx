@@ -27,7 +27,7 @@ export default function PayslipsPage() {
           Payslips
         </h1>
 
-        <p className="text-base text-gray-400 mt-2 max-w-3xl leading-relaxed">
+        <p className="text-base text-gray-300 mt-2 max-w-3xl leading-relaxed">
           Generate, track and deliver employee payslips.
         </p>
 

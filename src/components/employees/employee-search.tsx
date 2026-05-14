@@ -43,9 +43,10 @@ export default function EmployeeSearch() {
             bg-transparent
             outline-none
             w-full
-            text-[15px]
+            text-base
             text-white
             placeholder:text-gray-500
+            leading-normal
           "
         />
 
@@ -68,7 +69,7 @@ export default function EmployeeSearch() {
 
         <SlidersHorizontal size={20} />
 
-        <span className="text-[15px] font-medium">
+        <span className="text-base font-semibold leading-snug">
           Filters
         </span>
 

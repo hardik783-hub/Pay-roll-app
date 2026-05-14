@@ -44,7 +44,7 @@ export default function DepartmentDistribution() {
         Department Distribution
       </h2>
 
-      <p className="text-base text-gray-400 mt-2 leading-relaxed">
+      <p className="text-base text-gray-300 mt-2 leading-relaxed">
         Workforce allocation by department
       </p>
 
@@ -97,13 +97,13 @@ export default function DepartmentDistribution() {
                 }}
               />
 
-              <span className="text-[15px] text-gray-200 truncate">
+              <span className="text-base text-gray-100 font-medium truncate leading-snug">
                 {item.name}
               </span>
 
             </div>
 
-            <span className="text-[15px] text-gray-400 tabular-nums shrink-0">
+            <span className="text-base text-gray-300 tabular-nums shrink-0 font-medium">
               {item.value}%
             </span>
 

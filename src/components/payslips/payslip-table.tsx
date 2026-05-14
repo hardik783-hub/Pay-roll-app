@@ -61,14 +61,14 @@ export default function PayslipTable() {
 
       <div className="overflow-x-auto">
 
-        <table className="w-full min-w-[980px] text-[15px] leading-snug">
+        <table className="w-full min-w-[980px] text-base leading-relaxed">
 
           <thead
             className="
               border-b border-white/10
-              text-gray-400
-              text-sm
-              font-medium
+              text-gray-300
+              text-base
+              font-semibold
             "
           >
 
@@ -129,7 +129,7 @@ export default function PayslipTable() {
                         to-purple-500/20
                         border border-cyan-400/20
                         flex items-center justify-center
-                        text-[15px] font-semibold
+                        text-base font-semibold
                       "
                     >
                       {payslip.initials}
@@ -137,11 +137,11 @@ export default function PayslipTable() {
 
                     <div>
 
-                      <p className="font-medium text-gray-100 text-[16px]">
+                      <p className="font-semibold text-gray-100 text-lg leading-snug">
                         {payslip.employee}
                       </p>
 
-                      <p className="text-[15px] text-gray-400 mt-0.5">
+                      <p className="text-base text-gray-300 mt-1 leading-relaxed">
                         Payroll Batch #APR-2026
                       </p>
 
@@ -152,12 +152,12 @@ export default function PayslipTable() {
                 </td>
 
                 {/* Month */}
-                <td className="px-6 lg:px-7 py-6 text-gray-200">
+                <td className="px-6 lg:px-7 py-6 text-gray-200 text-base">
                   {payslip.month}
                 </td>
 
                 {/* Amount */}
-                <td className="px-6 lg:px-7 py-6 text-cyan-300 font-semibold text-[16px]">
+                <td className="px-6 lg:px-7 py-6 text-cyan-300 font-semibold text-lg tabular-nums">
                   {payslip.amount}
                 </td>
 
@@ -167,9 +167,9 @@ export default function PayslipTable() {
                   <span
                     className={`
                       inline-flex items-center
-                      px-3.5 py-1.5
+                      px-3.5 py-2
                       rounded-full
-                      text-sm font-medium
+                      text-base font-semibold
                       ${statusStyles[
                         payslip.status as keyof typeof statusStyles
                       ]}
@@ -181,7 +181,7 @@ export default function PayslipTable() {
                 </td>
 
                 {/* Delivery */}
-                <td className="px-6 lg:px-7 py-6 text-gray-200">
+                <td className="px-6 lg:px-7 py-6 text-gray-200 text-base">
                   {payslip.delivery}
                 </td>
 
@@ -194,7 +194,7 @@ export default function PayslipTable() {
                       className="
                         px-5 py-2.5
                         rounded-xl
-                        text-[15px] font-medium
+                        text-base font-semibold
                         border border-cyan-400/20
                         bg-cyan-500/10
                         text-cyan-300
@@ -209,7 +209,7 @@ export default function PayslipTable() {
                       className="
                         px-5 py-2.5
                         rounded-xl
-                        text-[15px] font-medium
+                        text-base font-semibold
                         border border-white/10
                         bg-white/[0.03]
                         text-gray-300

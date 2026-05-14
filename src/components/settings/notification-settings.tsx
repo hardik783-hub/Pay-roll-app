@@ -22,11 +22,11 @@ export default function NotificationSettings() {
 
       <div className="mb-8">
 
-        <h2 className="text-2xl font-semibold">
+        <h2 className="text-2xl lg:text-3xl font-semibold tracking-tight">
           Notification Preferences
         </h2>
 
-        <p className="text-base text-gray-400 mt-2">
+        <p className="text-base text-gray-300 mt-2 leading-relaxed">
           Configure realtime payroll notifications.
         </p>
 
@@ -47,7 +47,7 @@ export default function NotificationSettings() {
             "
           >
 
-            <span className="text-base text-gray-300">
+            <span className="text-base font-medium text-gray-100 leading-snug">
               {item}
             </span>
 
