@@ -27,8 +27,10 @@ export default function PayrollOverviewChart() {
         border border-white/10
         bg-white/[0.03]
         backdrop-blur-xl
-        p-6
-        h-[420px]
+        p-7
+        lg:p-8
+        min-h-[480px]
+        lg:min-h-[500px]
       "
     >
 
@@ -43,32 +45,44 @@ export default function PayrollOverviewChart() {
 
       <div className="relative z-10">
 
-        <h2 className="text-2xl font-semibold">
+        <h2 className="text-2xl lg:text-3xl font-semibold tracking-tight">
           Payroll Overview
         </h2>
 
-        <p className="text-sm text-gray-400 mt-1">
+        <p className="text-base text-gray-400 mt-2 leading-relaxed">
           Monthly payroll processing trends
         </p>
 
-        <div className="h-[320px] mt-8">
+        <div className="h-[360px] lg:h-[400px] mt-8 lg:mt-9">
 
           <ResponsiveContainer width="100%" height="100%">
 
-            <LineChart data={data}>
+            <LineChart data={data} margin={{ top: 8, right: 8, left: 0, bottom: 4 }}>
 
               <XAxis
                 dataKey="month"
                 stroke="#6b7280"
+                tick={{ fill: "#9ca3af", fontSize: 14 }}
+                tickLine={false}
+                axisLine={{ stroke: "rgba(255,255,255,0.08)" }}
               />
 
-              <Tooltip />
+              <Tooltip
+                contentStyle={{
+                  backgroundColor: "rgba(9, 9, 11, 0.92)",
+                  border: "1px solid rgba(255,255,255,0.12)",
+                  borderRadius: "12px",
+                  fontSize: "14px",
+                  padding: "10px 14px",
+                }}
+                labelStyle={{ color: "#e5e7eb", fontWeight: 600 }}
+              />
 
               <Line
                 type="monotone"
                 dataKey="payroll"
                 stroke="#22d3ee"
-                strokeWidth={3}
+                strokeWidth={3.5}
                 dot={false}
               />
 

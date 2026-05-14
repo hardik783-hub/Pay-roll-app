@@ -19,7 +19,8 @@ export default function AIInsights() {
         from-cyan-500/[0.04]
         to-purple-500/[0.05]
         backdrop-blur-xl
-        p-6
+        p-7
+        lg:p-8
       "
     >
 
@@ -32,23 +33,23 @@ export default function AIInsights() {
 
       <div className="relative z-10">
 
-        <div className="flex items-center gap-3 mb-6">
+        <div className="flex items-center gap-3 mb-7">
 
           <div
             className="
-              w-3 h-3 rounded-full
+              w-3.5 h-3.5 rounded-full
               bg-cyan-400
               animate-pulse
             "
           />
 
-          <h2 className="text-2xl font-semibold">
+          <h2 className="text-2xl lg:text-3xl font-semibold tracking-tight">
             AI Insights
           </h2>
 
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-3.5">
 
           {insights.map((insight) => (
 
@@ -58,11 +59,11 @@ export default function AIInsights() {
                 rounded-2xl
                 border border-white/10
                 bg-white/[0.03]
-                p-4
+                p-5
               "
             >
 
-              <p className="text-sm text-gray-300 leading-relaxed">
+              <p className="text-[15px] text-gray-200 leading-relaxed">
                 {insight}
               </p>
 

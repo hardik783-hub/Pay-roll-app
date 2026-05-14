@@ -13,6 +13,7 @@ export default function PayslipSearch() {
       className="
         flex flex-col xl:flex-row
         gap-4
+        lg:gap-5
       "
     >
 
@@ -20,8 +21,8 @@ export default function PayslipSearch() {
       <div
         className="
           flex-1
-          flex items-center gap-3
-          px-5 py-3
+          flex items-center gap-3.5
+          px-6 py-3.5
           rounded-2xl
           border border-white/10
           bg-white/[0.03]
@@ -32,8 +33,8 @@ export default function PayslipSearch() {
       >
 
         <Search
-          size={18}
-          className="text-gray-400"
+          size={20}
+          className="text-gray-400 shrink-0"
         />
 
         <input
@@ -43,7 +44,7 @@ export default function PayslipSearch() {
             bg-transparent
             outline-none
             w-full
-            text-sm
+            text-[15px]
             text-white
             placeholder:text-gray-500
           "
@@ -54,8 +55,8 @@ export default function PayslipSearch() {
       {/* Month */}
       <button
         className="
-          flex items-center justify-center gap-2
-          px-5 py-3
+          flex items-center justify-center gap-2.5
+          px-6 py-3.5
           rounded-2xl
           border border-white/10
           bg-white/[0.03]
@@ -65,9 +66,9 @@ export default function PayslipSearch() {
         "
       >
 
-        <Calendar size={18} />
+        <Calendar size={20} />
 
-        <span className="text-sm font-medium">
+        <span className="text-[15px] font-medium">
           April 2026
         </span>
 
@@ -76,8 +77,8 @@ export default function PayslipSearch() {
       {/* Filters */}
       <button
         className="
-          flex items-center justify-center gap-2
-          px-5 py-3
+          flex items-center justify-center gap-2.5
+          px-6 py-3.5
           rounded-2xl
           border border-cyan-400/20
           bg-cyan-500/10
@@ -87,9 +88,9 @@ export default function PayslipSearch() {
         "
       >
 
-        <SlidersHorizontal size={18} />
+        <SlidersHorizontal size={20} />
 
-        <span className="text-sm font-medium">
+        <span className="text-[15px] font-medium">
           Filters
         </span>
 
@@ -98,13 +99,13 @@ export default function PayslipSearch() {
       {/* Generate */}
       <button
         className="
-          px-6 py-3
+          px-7 py-3.5
           rounded-2xl
+          text-[15px] font-semibold
           bg-gradient-to-r
           from-cyan-500
           to-blue-500
           text-black
-          font-semibold
           hover:scale-[1.02]
           transition-all duration-300
         "

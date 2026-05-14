@@ -35,7 +35,8 @@ export default function EmployeeStats() {
       className="
         grid grid-cols-1
         md:grid-cols-3
-        gap-5
+        gap-6
+        xl:gap-7
       "
     >
 
@@ -57,7 +58,8 @@ export default function EmployeeStats() {
               border border-white/10
               bg-white/[0.03]
               backdrop-blur-xl
-              p-6
+              p-7
+              lg:p-8
             "
           >
 
@@ -80,11 +82,11 @@ export default function EmployeeStats() {
 
               <div>
 
-                <p className="text-sm text-gray-400 mb-2">
+                <p className="text-base text-gray-400 mb-2.5">
                   {stat.title}
                 </p>
 
-                <h3 className="text-3xl font-semibold tracking-tight">
+                <h3 className="text-3xl lg:text-4xl 2xl:text-5xl font-semibold tracking-tight">
                   {stat.value}
                 </h3>
 
@@ -92,13 +94,13 @@ export default function EmployeeStats() {
 
               <div
                 className="
-                  p-3 rounded-xl
+                  p-3.5 rounded-xl
                   bg-cyan-500/10
                   border border-cyan-400/20
                   text-cyan-300
                 "
               >
-                <Icon size={20} />
+                <Icon size={22} strokeWidth={1.75} />
               </div>
 
             </div>

@@ -86,7 +86,7 @@ function Node({
               border border-cyan-400/20
               bg-black/70
               backdrop-blur-xl
-              text-[11px]
+              text-[12px]
               text-cyan-200
               whitespace-nowrap
               shadow-[0_0_20px_rgba(34,211,238,0.15)]
@@ -127,7 +127,7 @@ export default function CloudScene() {
     <div
       className="
         relative
-        h-[620px]
+        h-[680px]
         w-full
         rounded-2xl
         overflow-hidden
@@ -143,13 +143,13 @@ export default function CloudScene() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(168,85,247,0.18),transparent_70%)]" />
 
       {/* Header */}
-      <div className="absolute top-6 left-6 z-20">
+      <div className="absolute top-7 left-7 z-20 lg:top-8 lg:left-8">
 
-        <h2 className="text-2xl font-semibold tracking-tight">
+        <h2 className="text-2xl lg:text-3xl font-semibold tracking-tight">
           AI Infrastructure Mesh
         </h2>
 
-        <p className="text-sm text-gray-400 mt-1">
+        <p className="text-base text-gray-400 mt-2 max-w-md leading-relaxed">
           Distributed realtime payroll compute topology
         </p>
 

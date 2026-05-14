@@ -23,12 +23,15 @@ export default function DashboardShell({
       className="
         relative overflow-hidden
         min-h-screen
+        w-full
+        min-w-0
         bg-gradient-to-br
         from-black
         via-zinc-950
         to-black
         text-white
         flex
+        flex-row
       "
     >
 
@@ -56,14 +59,15 @@ export default function DashboardShell({
       {/* Sidebar */}
       <aside
         className="
-          w-[290px]
+          w-[308px]
+          shrink-0
           border-r border-white/10
           bg-white/[0.03]
           backdrop-blur-2xl
           hidden md:flex
           flex-col
           justify-between
-          p-7
+          p-8
         "
       >
 
@@ -74,7 +78,7 @@ export default function DashboardShell({
 
             <h1
               className="
-                text-3xl
+                text-4xl
                 font-bold
                 tracking-tight
                 bg-gradient-to-r
@@ -89,9 +93,9 @@ export default function DashboardShell({
 
             <p
               className="
-                text-sm
+                text-[15px]
                 text-gray-400
-                mt-2
+                mt-2.5
                 leading-relaxed
               "
             >
@@ -101,34 +105,34 @@ export default function DashboardShell({
           </div>
 
           {/* Navigation */}
-          <nav className="space-y-3">
+          <nav className="space-y-2.5">
 
             <SidebarItem
-              icon={<LayoutDashboard size={20} />}
+              icon={<LayoutDashboard size={22} strokeWidth={1.75} />}
               label="Dashboard"
               href="/"
             />
 
             <SidebarItem
-              icon={<Users size={20} />}
+              icon={<Users size={22} strokeWidth={1.75} />}
               label="Employees"
               href="/employees"
             />
 
             <SidebarItem
-              icon={<FileText size={20} />}
+              icon={<FileText size={22} strokeWidth={1.75} />}
               label="Payslips"
               href="/payslips"
             />
 
             <SidebarItem
-              icon={<BarChart3 size={20} />}
+              icon={<BarChart3 size={22} strokeWidth={1.75} />}
               label="Analytics"
               href="/analytics"
             />
 
             <SidebarItem
-              icon={<Settings size={20} />}
+              icon={<Settings size={22} strokeWidth={1.75} />}
               label="Settings"
               href="/settings"
             />
@@ -146,7 +150,7 @@ export default function DashboardShell({
             bg-gradient-to-br
             from-cyan-500/[0.08]
             to-purple-500/[0.08]
-            p-5
+            p-6
           "
         >
 
@@ -162,7 +166,7 @@ export default function DashboardShell({
 
             <p
               className="
-                text-[11px]
+                text-xs
                 uppercase
                 tracking-[0.22em]
                 text-cyan-300/80
@@ -172,11 +176,11 @@ export default function DashboardShell({
               System Status
             </p>
 
-            <h3 className="text-xl font-semibold">
+            <h3 className="text-2xl font-semibold leading-snug">
               All Systems Operational
             </h3>
 
-            <div className="flex items-center gap-2 mt-4">
+            <div className="flex items-center gap-2.5 mt-4">
 
               <div
                 className="
@@ -187,7 +191,7 @@ export default function DashboardShell({
                 "
               />
 
-              <span className="text-sm text-gray-300">
+              <span className="text-[15px] text-gray-300">
                 99.98% uptime
               </span>
 
@@ -200,9 +204,9 @@ export default function DashboardShell({
       </aside>
 
       {/* Main Content */}
-      <main className="flex-1 overflow-y-auto">
+      <main className="flex-1 min-w-0 w-full min-h-0 overflow-y-auto">
 
-        <div className="w-full min-h-screen px-8 py-8 xl:px-12 2xl:px-16">
+        <div className="w-full max-w-none min-w-0 min-h-screen px-6 py-9 sm:px-8 sm:py-10 xl:px-11 xl:py-11 2xl:px-16 2xl:py-12">
           {children}
         </div>
 
@@ -236,7 +240,7 @@ function SidebarItem({
           relative
           w-full
           flex items-center gap-4
-          px-5 py-4
+          px-5 py-4 min-h-[52px]
           rounded-xl
           overflow-hidden
           transition-all duration-300
@@ -266,7 +270,7 @@ function SidebarItem({
         <span
           className="
             relative z-10
-            text-[15px]
+            text-base
             font-medium
             text-gray-200
           "

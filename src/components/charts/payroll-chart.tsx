@@ -24,40 +24,53 @@ export default function PayrollChart() {
       bg-white/5
       border border-white/10
       rounded-2xl
-      p-5
+      p-6
+      lg:p-7
       backdrop-blur-xl
     ">
 
-      <div className="flex items-center justify-between mb-6">
+      <div className="flex items-center justify-between mb-7">
         <div>
-          <h2 className="text-2xl font-bold">
+          <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">
             Payroll Trends
           </h2>
 
-          <p className="text-gray-400 text-sm">
+          <p className="text-gray-400 text-base mt-1.5 leading-relaxed">
             Monthly payroll processing analytics
           </p>
         </div>
       </div>
 
-      <div className="h-[320px]">
+      <div className="h-[380px] lg:h-[420px]">
 
         <ResponsiveContainer width="100%" height="100%">
 
-          <LineChart data={data}>
+          <LineChart data={data} margin={{ top: 8, right: 8, left: 0, bottom: 4 }}>
 
             <XAxis
               dataKey="month"
-              stroke="#888"
+              stroke="#6b7280"
+              tick={{ fill: "#9ca3af", fontSize: 14 }}
+              tickLine={false}
+              axisLine={{ stroke: "rgba(255,255,255,0.08)" }}
             />
 
-            <Tooltip />
+            <Tooltip
+              contentStyle={{
+                backgroundColor: "rgba(9, 9, 11, 0.92)",
+                border: "1px solid rgba(255,255,255,0.12)",
+                borderRadius: "12px",
+                fontSize: "14px",
+                padding: "10px 14px",
+              }}
+              labelStyle={{ color: "#e5e7eb", fontWeight: 600 }}
+            />
 
             <Line
               type="monotone"
               dataKey="payroll"
               stroke="#22d3ee"
-              strokeWidth={3}
+              strokeWidth={3.5}
               dot={false}
             />
 

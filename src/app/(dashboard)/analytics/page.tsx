@@ -7,7 +7,7 @@ import AIInsights from "@/components/analytics/ai-insights";
 export default function AnalyticsPage() {
   return (
 
-    <div className="space-y-6">
+    <div className="space-y-8 lg:space-y-10">
 
       {/* Header */}
       <div>
@@ -15,6 +15,8 @@ export default function AnalyticsPage() {
         <h1
           className="
             text-4xl
+            lg:text-5xl
+            2xl:text-6xl
             font-semibold
             tracking-tight
             bg-gradient-to-r
@@ -27,7 +29,7 @@ export default function AnalyticsPage() {
           Analytics
         </h1>
 
-        <p className="text-sm text-gray-400 mt-1">
+        <p className="text-base text-gray-400 mt-2 max-w-3xl leading-relaxed">
           Monitor payroll intelligence and infrastructure performance.
         </p>
 
@@ -39,12 +41,13 @@ export default function AnalyticsPage() {
       <div
         className="
           grid grid-cols-1
-          2xl:grid-cols-3
-          gap-6
+          xl:grid-cols-3
+          gap-7
+          lg:gap-8
         "
       >
 
-        <div className="2xl:col-span-2">
+        <div className="xl:col-span-2">
           <PayrollOverviewChart />
         </div>
 
@@ -57,7 +60,8 @@ export default function AnalyticsPage() {
         className="
           grid grid-cols-1
           xl:grid-cols-2
-          gap-6
+          gap-7
+          lg:gap-8
         "
       >
 

@@ -61,39 +61,40 @@ export default function PayslipTable() {
 
       <div className="overflow-x-auto">
 
-        <table className="w-full min-w-[950px]">
+        <table className="w-full min-w-[980px] text-[15px] leading-snug">
 
           <thead
             className="
               border-b border-white/10
               text-gray-400
               text-sm
+              font-medium
             "
           >
 
             <tr>
 
-              <th className="text-left px-6 py-4">
+              <th className="text-left px-6 lg:px-7 py-4">
                 Employee
               </th>
 
-              <th className="text-left px-6 py-4">
+              <th className="text-left px-6 lg:px-7 py-4">
                 Month
               </th>
 
-              <th className="text-left px-6 py-4">
+              <th className="text-left px-6 lg:px-7 py-4">
                 Amount
               </th>
 
-              <th className="text-left px-6 py-4">
+              <th className="text-left px-6 lg:px-7 py-4">
                 Status
               </th>
 
-              <th className="text-left px-6 py-4">
+              <th className="text-left px-6 lg:px-7 py-4">
                 Delivery
               </th>
 
-              <th className="text-left px-6 py-4">
+              <th className="text-left px-6 lg:px-7 py-4">
                 Actions
               </th>
 
@@ -115,20 +116,20 @@ export default function PayslipTable() {
               >
 
                 {/* Employee */}
-                <td className="px-6 py-5">
+                <td className="px-6 lg:px-7 py-6">
 
                   <div className="flex items-center gap-4">
 
                     <div
                       className="
-                        w-11 h-11
+                        w-12 h-12
                         rounded-full
                         bg-gradient-to-br
                         from-cyan-500/20
                         to-purple-500/20
                         border border-cyan-400/20
                         flex items-center justify-center
-                        text-sm font-semibold
+                        text-[15px] font-semibold
                       "
                     >
                       {payslip.initials}
@@ -136,11 +137,11 @@ export default function PayslipTable() {
 
                     <div>
 
-                      <p className="font-medium">
+                      <p className="font-medium text-gray-100 text-[16px]">
                         {payslip.employee}
                       </p>
 
-                      <p className="text-sm text-gray-400">
+                      <p className="text-[15px] text-gray-400 mt-0.5">
                         Payroll Batch #APR-2026
                       </p>
 
@@ -151,23 +152,24 @@ export default function PayslipTable() {
                 </td>
 
                 {/* Month */}
-                <td className="px-6 py-5 text-gray-300">
+                <td className="px-6 lg:px-7 py-6 text-gray-200">
                   {payslip.month}
                 </td>
 
                 {/* Amount */}
-                <td className="px-6 py-5 text-cyan-300 font-medium">
+                <td className="px-6 lg:px-7 py-6 text-cyan-300 font-semibold text-[16px]">
                   {payslip.amount}
                 </td>
 
                 {/* Status */}
-                <td className="px-6 py-5">
+                <td className="px-6 lg:px-7 py-6">
 
                   <span
                     className={`
-                      px-3 py-1
+                      inline-flex items-center
+                      px-3.5 py-1.5
                       rounded-full
-                      text-sm
+                      text-sm font-medium
                       ${statusStyles[
                         payslip.status as keyof typeof statusStyles
                       ]}
@@ -179,19 +181,20 @@ export default function PayslipTable() {
                 </td>
 
                 {/* Delivery */}
-                <td className="px-6 py-5 text-gray-300">
+                <td className="px-6 lg:px-7 py-6 text-gray-200">
                   {payslip.delivery}
                 </td>
 
                 {/* Actions */}
-                <td className="px-6 py-5">
+                <td className="px-6 lg:px-7 py-6">
 
                   <div className="flex items-center gap-3">
 
                     <button
                       className="
-                        px-4 py-2
+                        px-5 py-2.5
                         rounded-xl
+                        text-[15px] font-medium
                         border border-cyan-400/20
                         bg-cyan-500/10
                         text-cyan-300
@@ -204,8 +207,9 @@ export default function PayslipTable() {
 
                     <button
                       className="
-                        px-4 py-2
+                        px-5 py-2.5
                         rounded-xl
+                        text-[15px] font-medium
                         border border-white/10
                         bg-white/[0.03]
                         text-gray-300

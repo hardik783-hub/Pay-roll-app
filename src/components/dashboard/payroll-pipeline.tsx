@@ -17,13 +17,14 @@ export default function PayrollPipeline() {
       className="
         relative
         overflow-hidden
-        min-h-[170px]
+        min-h-[188px]
         bg-gradient-to-br
         from-white/[0.04]
         to-white/[0.02]
         border border-white/10
         rounded-2xl
-        px-8 py-6
+        px-8 py-7
+        lg:px-9 lg:py-8
         backdrop-blur-xl
       "
     >
@@ -32,13 +33,13 @@ export default function PayrollPipeline() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(34,211,238,0.06),transparent_55%)]" />
 
       {/* Header */}
-      <div className="relative z-10 mb-8">
+      <div className="relative z-10 mb-8 lg:mb-9">
 
-        <h2 className="text-2xl font-semibold tracking-tight">
+        <h2 className="text-2xl lg:text-3xl font-semibold tracking-tight">
           Payroll Processing Pipeline
         </h2>
 
-        <p className="text-sm text-gray-400 mt-1">
+        <p className="text-base text-gray-400 mt-2 leading-relaxed">
           Realtime distributed payroll orchestration
         </p>
 
@@ -74,13 +75,13 @@ export default function PayrollPipeline() {
               }}
               className="
                 relative overflow-hidden
-                px-3.5 py-2
+                px-4 py-2.5
                 rounded-xl
                 border border-cyan-400/20
                 bg-gradient-to-br
                 from-cyan-500/10
                 to-purple-500/10
-                text-[17px] font-medium
+                text-[18px] lg:text-[19px] font-medium
                 whitespace-nowrap
                 shadow-[0_0_25px_rgba(34,211,238,0.06)]
                 backdrop-blur-xl
@@ -99,7 +100,7 @@ export default function PayrollPipeline() {
             {/* Connector */}
             {index !== steps.length - 1 && (
 
-              <div className="relative w-10 h-[2px] mx-2 overflow-hidden">
+              <div className="relative w-12 h-[2px] mx-2.5 overflow-hidden">
 
                 {/* Static Line */}
                 <div className="absolute inset-0 bg-cyan-400/20" />

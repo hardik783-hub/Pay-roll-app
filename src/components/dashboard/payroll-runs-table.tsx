@@ -40,31 +40,32 @@ export default function PayrollRunsTable() {
         bg-white/5
         border border-white/10
         rounded-2xl
-        p-5
+        p-6
+        lg:p-7
         backdrop-blur-xl
       "
     >
-      <div className="mb-6">
-        <h2 className="text-2xl font-bold">
+      <div className="mb-7">
+        <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">
           Payroll Runs
         </h2>
 
-        <p className="text-sm text-gray-400">
+        <p className="text-base text-gray-400 mt-1.5 leading-relaxed">
           Recent payroll execution activity
         </p>
       </div>
 
       <div className="overflow-x-auto">
 
-        <table className="w-full text-sm">
+        <table className="w-full text-[15px] leading-snug">
 
-          <thead className="text-gray-400 border-b border-white/10">
+          <thead className="text-gray-400 border-b border-white/10 text-sm font-medium">
             <tr>
-              <th className="text-left py-4">Run ID</th>
-              <th className="text-left py-4">Employees</th>
-              <th className="text-left py-4">Amount</th>
-              <th className="text-left py-4">Status</th>
-              <th className="text-left py-4">Executed</th>
+              <th className="text-left py-4 px-1 font-medium">Run ID</th>
+              <th className="text-left py-4 px-1 font-medium">Employees</th>
+              <th className="text-left py-4 px-1 font-medium">Amount</th>
+              <th className="text-left py-4 px-1 font-medium">Status</th>
+              <th className="text-left py-4 px-1 font-medium">Executed</th>
             </tr>
           </thead>
 
@@ -80,23 +81,23 @@ export default function PayrollRunsTable() {
                 className="border-b border-white/5 hover:bg-white/5 transition"
               >
 
-                <td className="py-4 font-medium">
+                <td className="py-5 font-medium text-gray-100">
                   {run.id}
                 </td>
 
-                <td className="py-4">
+                <td className="py-5 text-gray-200">
                   {run.employees.toLocaleString()}
                 </td>
 
-                <td className="py-4">
+                <td className="py-5 text-gray-200">
                   {run.amount}
                 </td>
 
-                <td className="py-4">
+                <td className="py-5">
 
                   <span
                     className={`
-                      px-3 py-1 rounded-full text-xs
+                      inline-flex items-center px-3.5 py-1.5 rounded-full text-sm font-medium
                       ${
                         run.status === "Completed"
                           ? "bg-emerald-500/10 text-emerald-300"
@@ -111,7 +112,7 @@ export default function PayrollRunsTable() {
 
                 </td>
 
-                <td className="py-4 text-gray-400">
+                <td className="py-5 text-gray-400">
                   {run.time}
                 </td>
 

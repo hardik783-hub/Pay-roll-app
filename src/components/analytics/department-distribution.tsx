@@ -33,20 +33,22 @@ export default function DepartmentDistribution() {
         border border-white/10
         bg-white/[0.03]
         backdrop-blur-xl
-        p-6
-        h-[420px]
+        p-7
+        lg:p-8
+        min-h-[480px]
+        lg:min-h-[500px]
       "
     >
 
-      <h2 className="text-2xl font-semibold">
+      <h2 className="text-2xl lg:text-3xl font-semibold tracking-tight">
         Department Distribution
       </h2>
 
-      <p className="text-sm text-gray-400 mt-1">
+      <p className="text-base text-gray-400 mt-2 leading-relaxed">
         Workforce allocation by department
       </p>
 
-      <div className="h-[260px] mt-8">
+      <div className="h-[300px] lg:h-[320px] mt-8 lg:mt-9">
 
         <ResponsiveContainer width="100%" height="100%">
 
@@ -55,8 +57,8 @@ export default function DepartmentDistribution() {
             <Pie
               data={data}
               dataKey="value"
-              innerRadius={70}
-              outerRadius={100}
+              innerRadius={78}
+              outerRadius={112}
               paddingAngle={4}
             >
 
@@ -77,31 +79,31 @@ export default function DepartmentDistribution() {
 
       </div>
 
-      <div className="space-y-3 mt-4">
+      <div className="space-y-3.5 mt-5">
 
         {data.map((item, index) => (
 
           <div
             key={item.name}
-            className="flex items-center justify-between"
+            className="flex items-center justify-between gap-3"
           >
 
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 min-w-0">
 
               <div
-                className="w-3 h-3 rounded-full"
+                className="w-3.5 h-3.5 shrink-0 rounded-full"
                 style={{
                   backgroundColor: COLORS[index],
                 }}
               />
 
-              <span className="text-sm text-gray-300">
+              <span className="text-[15px] text-gray-200 truncate">
                 {item.name}
               </span>
 
             </div>
 
-            <span className="text-sm text-gray-400">
+            <span className="text-[15px] text-gray-400 tabular-nums shrink-0">
               {item.value}%
             </span>
 

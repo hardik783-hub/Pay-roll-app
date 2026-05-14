@@ -12,6 +12,7 @@ export default function EmployeeSearch() {
       className="
         flex flex-col lg:flex-row
         gap-4
+        lg:gap-5
       "
     >
 
@@ -19,8 +20,8 @@ export default function EmployeeSearch() {
       <div
         className="
           flex-1
-          flex items-center gap-3
-          px-5 py-3
+          flex items-center gap-3.5
+          px-6 py-3.5
           rounded-2xl
           border border-white/10
           bg-white/[0.03]
@@ -31,8 +32,8 @@ export default function EmployeeSearch() {
       >
 
         <Search
-          size={18}
-          className="text-gray-400"
+          size={20}
+          className="text-gray-400 shrink-0"
         />
 
         <input
@@ -42,7 +43,7 @@ export default function EmployeeSearch() {
             bg-transparent
             outline-none
             w-full
-            text-sm
+            text-[15px]
             text-white
             placeholder:text-gray-500
           "
@@ -53,8 +54,8 @@ export default function EmployeeSearch() {
       {/* Filter */}
       <button
         className="
-          flex items-center justify-center gap-2
-          px-5 py-3
+          flex items-center justify-center gap-2.5
+          px-6 py-3.5
           rounded-2xl
           border border-cyan-400/20
           bg-cyan-500/10
@@ -65,9 +66,9 @@ export default function EmployeeSearch() {
         "
       >
 
-        <SlidersHorizontal size={18} />
+        <SlidersHorizontal size={20} />
 
-        <span className="text-sm font-medium">
+        <span className="text-[15px] font-medium">
           Filters
         </span>
 

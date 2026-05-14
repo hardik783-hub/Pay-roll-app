@@ -49,7 +49,7 @@ export default function DashboardPage() {
 
   return (
 
-    <div className="space-y-6">
+    <div className="space-y-8 lg:space-y-10">
 
       {/* Header */}
       <div>
@@ -57,6 +57,8 @@ export default function DashboardPage() {
         <h1
           className="
             text-4xl
+            lg:text-5xl
+            2xl:text-6xl
             font-semibold
             tracking-tight
             bg-gradient-to-r
@@ -69,7 +71,7 @@ export default function DashboardPage() {
           Dashboard
         </h1>
 
-        <p className="text-sm text-gray-400 mt-1">
+        <p className="text-base text-gray-400 mt-2 max-w-3xl leading-relaxed">
           Monitor payroll processing and system health.
         </p>
 
@@ -82,24 +84,24 @@ export default function DashboardPage() {
         transition={{ duration: 0.4 }}
       >
 
-        <div className="grid grid-cols-1 xl:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 xl:grid-cols-3 gap-6 xl:gap-7">
 
           <AnalyticsCard
             title="Employees"
             value={metrics.employees.toLocaleString()}
-            icon={<Users size={20} />}
+            icon={<Users size={22} strokeWidth={1.75} />}
           />
 
           <AnalyticsCard
             title="Payroll Processed"
             value={`$${metrics.payroll}M`}
-            icon={<DollarSign size={20} />}
+            icon={<DollarSign size={22} strokeWidth={1.75} />}
           />
 
           <AnalyticsCard
             title="Success Rate"
             value={`${metrics.success}%`}
-            icon={<Activity size={20} />}
+            icon={<Activity size={22} strokeWidth={1.75} />}
           />
 
         </div>
@@ -110,13 +112,14 @@ export default function DashboardPage() {
       <div
         className="
           grid grid-cols-1
-          2xl:grid-cols-3
-          gap-6
+          xl:grid-cols-3
+          gap-7
+          lg:gap-8
           items-start
         "
       >
 
-        <div className="2xl:col-span-2">
+        <div className="xl:col-span-2">
           <PayrollPipeline />
         </div>
 
@@ -128,13 +131,14 @@ export default function DashboardPage() {
       <div
         className="
           grid grid-cols-1
-          2xl:grid-cols-3
-          gap-6
+          xl:grid-cols-3
+          gap-7
+          lg:gap-8
           items-start
         "
       >
 
-        <div className="2xl:col-span-2">
+        <div className="xl:col-span-2">
           <PayrollRunsTable />
         </div>
 
@@ -172,7 +176,8 @@ function AnalyticsCard({
         border border-white/10
         bg-white/[0.03]
         backdrop-blur-xl
-        p-6
+        p-7
+        lg:p-8
       "
     >
 
@@ -195,11 +200,11 @@ function AnalyticsCard({
 
         <div>
 
-          <p className="text-sm text-gray-400 mb-2">
+          <p className="text-base text-gray-400 mb-2.5">
             {title}
           </p>
 
-          <h3 className="text-3xl font-semibold tracking-tight">
+          <h3 className="text-3xl lg:text-4xl 2xl:text-5xl font-semibold tracking-tight">
             {value}
           </h3>
 
@@ -207,7 +212,7 @@ function AnalyticsCard({
 
         <div
           className="
-            p-3 rounded-xl
+            p-3.5 rounded-xl
             bg-cyan-500/10
             border border-cyan-400/20
             text-cyan-300

@@ -4,7 +4,7 @@ import EmployeeTable from "@/components/employees/employee-table";
 
 export default function EmployeesPage() {
   return (
-    <div className="space-y-6">
+    <div className="space-y-8 lg:space-y-10">
 
       {/* Header */}
       <div>
@@ -12,6 +12,8 @@ export default function EmployeesPage() {
         <h1
           className="
             text-4xl
+            lg:text-5xl
+            2xl:text-6xl
             font-semibold
             tracking-tight
             bg-gradient-to-r
@@ -24,7 +26,7 @@ export default function EmployeesPage() {
           Employees
         </h1>
 
-        <p className="text-sm text-gray-400 mt-1">
+        <p className="text-base text-gray-400 mt-2 max-w-3xl leading-relaxed">
           Manage workforce payroll operations and employee records.
         </p>
 

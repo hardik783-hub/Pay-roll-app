@@ -10,22 +10,22 @@ import {
 
 const activities = [
   {
-    icon: <CheckCircle2 size={18} />,
+    icon: <CheckCircle2 size={20} strokeWidth={1.75} />,
     text: "Payroll batch RUN-203 completed",
     time: "2 min ago",
   },
   {
-    icon: <FileText size={18} />,
+    icon: <FileText size={20} strokeWidth={1.75} />,
     text: "Payslip generated for EMP1023",
     time: "5 min ago",
   },
   {
-    icon: <Activity size={18} />,
+    icon: <Activity size={20} strokeWidth={1.75} />,
     text: "SQS workers scaled to 18 instances",
     time: "8 min ago",
   },
   {
-    icon: <Mail size={18} />,
+    icon: <Mail size={20} strokeWidth={1.75} />,
     text: "Payslip email delivered successfully",
     time: "12 min ago",
   },
@@ -37,21 +37,22 @@ export default function ActivityFeed() {
       bg-white/5
       border border-white/10
       rounded-2xl
-      p-5
+      p-6
+      lg:p-7
       backdrop-blur-xl
     ">
       
-      <div className="mb-6">
-        <h2 className="text-2xl font-bold">
+      <div className="mb-7">
+        <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">
           Live Activity
         </h2>
 
-        <p className="text-sm text-gray-400">
+        <p className="text-base text-gray-400 mt-1.5 leading-relaxed">
           Realtime payroll infrastructure events
         </p>
       </div>
 
-      <div className="space-y-4">
+      <div className="space-y-3.5">
 
         {activities.map((activity, index) => (
           <motion.div
@@ -62,8 +63,8 @@ export default function ActivityFeed() {
               delay: index * 0.15,
             }}
             className="
-              flex items-center justify-between
-              p-4 rounded-xl
+              flex items-center justify-between gap-4
+              p-4 min-h-[56px] rounded-xl
               bg-white/5
               border border-white/10
               hover:border-cyan-400/20
@@ -71,23 +72,23 @@ export default function ActivityFeed() {
             "
           >
 
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 min-w-0">
 
               <div className="
-                p-2 rounded-lg
+                shrink-0 p-2.5 rounded-lg
                 bg-cyan-500/10
                 text-cyan-300
               ">
                 {activity.icon}
               </div>
 
-              <p className="text-sm">
+              <p className="text-[15px] leading-snug text-gray-100 min-w-0">
                 {activity.text}
               </p>
 
             </div>
 
-            <span className="text-xs text-gray-400">
+            <span className="shrink-0 text-sm text-gray-400 tabular-nums">
               {activity.time}
             </span>
 

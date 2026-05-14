@@ -29,19 +29,20 @@ export default function SystemMetrics() {
         border border-white/10
         bg-white/[0.03]
         backdrop-blur-xl
-        p-6
+        p-7
+        lg:p-8
       "
     >
 
-      <h2 className="text-2xl font-semibold">
+      <h2 className="text-2xl lg:text-3xl font-semibold tracking-tight">
         System Metrics
       </h2>
 
-      <p className="text-sm text-gray-400 mt-1">
+      <p className="text-base text-gray-400 mt-2 leading-relaxed">
         Realtime infrastructure health
       </p>
 
-      <div className="grid grid-cols-2 gap-4 mt-8">
+      <div className="grid grid-cols-2 gap-4 lg:gap-5 mt-8 lg:mt-9">
 
         {metrics.map((metric) => (
 
@@ -52,14 +53,15 @@ export default function SystemMetrics() {
               border border-white/10
               bg-white/[0.03]
               p-5
+              lg:p-6
             "
           >
 
-            <p className="text-sm text-gray-400">
+            <p className="text-[15px] text-gray-400 leading-snug">
               {metric.label}
             </p>
 
-            <h3 className="text-2xl font-semibold mt-2 text-cyan-300">
+            <h3 className="text-2xl lg:text-3xl font-semibold mt-2.5 text-cyan-300 tabular-nums">
               {metric.value}
             </h3>
 
